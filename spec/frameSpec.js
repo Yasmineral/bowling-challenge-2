@@ -8,12 +8,12 @@ describe("Frame", function() {
   describe("#roll", function() {
     it("Rolling adds to the frame score array", function() {
       frame.roll(7);
-      expect(frame.score).toEqual([7]);
+      expect(frame.frameScore).toEqual([7]);
     })
     it("A second roll adds another number to the scores array", function() {
       frame.roll(7)
       frame.roll(5)
-      expect(frame.score).toEqual([7,5])
+      expect(frame.frameScore).toEqual([7,5])
     })
   })
   describe("#getScore", function() {
