@@ -10,10 +10,17 @@ describe("Frame", function() {
       frame.roll(7);
       expect(frame.score).toEqual([7]);
     })
-    it("Rolling a second time adds a nother number to the scores array", function() {
+    it("A second roll adds another number to the scores array", function() {
       frame.roll(7)
       frame.roll(5)
       expect(frame.score).toEqual([7,5])
+    })
+  })
+  describe("#getScore", function() {
+    it("returns the total score for the frame", function() {
+      frame.roll(7)
+      frame.roll(1)
+      expect(frame.getScore()).toEqual(8)
     })
   })
 })

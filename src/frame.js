@@ -8,6 +8,6 @@ class Frame {
   }
 
   getScore() {
-    return this.score
+    return this.score.reduce((a, b) => a + b) 
   }
 }
