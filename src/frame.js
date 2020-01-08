@@ -1,10 +1,10 @@
 class Frame {
   constructor() {
-    this.score = 0
+    this.score = []
   }
 
   roll(totalPins) {
-    this.score += totalPins
+    this.score.push(totalPins)
   }
 
   getScore() {
