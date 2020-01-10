@@ -1,14 +1,46 @@
 <html>
   <head>
-    <link rel='stylesheet' type='text/css' href='/public/index.css' />
+    <link rel='stylesheet' type='text/css' href='../public/src/index.css' />
   </head>
   <body>
+      <h1>Let's bowl!</h1>
     <div id='scorecard-container' class='scorecard_container'>
     </div>
     <div id='scorecard-controls' class='scorecard_controls'>
     </div>
+    <div class='frame'>Frame 1
+    <form>
+      <select id ="roll_1">
+         <option value = "-" selected>-</option>
+         <option value = "1">1</option>
+         <option value = "2">2</option>
+         <option value = "3">3</option>
+         <option value = "4">4</option>
+         <option value = "5">5</option>
+         <option value = "6">6</option>
+         <option value = "7">7</option>
+         <option value = "8">8</option>
+         <option value = "9">9</option>
+         <option value = "10">10</option>
+      </select>
+      <select id="roll_2">
+        <option value = "-" selected>-</option>
+        <option value = "1">1</option>
+        <option value = "2">2</option>
+        <option value = "3">3</option>
+        <option value = "4">4</option>
+        <option value = "5">5</option>
+        <option value = "6">6</option>
+        <option value = "7">7</option>
+        <option value = "8">8</option>
+        <option value = "9">9</option>
+        <option value = "10">10</option>
+     </select>
+   </form>
+   <p>Total: </p>
+  </div>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script type='text/javascript' src='/public/src/frame.js'></script>
-    <script type='text/javascript' src='/public/interface.js'></script>
+    <script type='text/javascript' src='../public/src/frame.js'></script>
+    <script type='text/javascript' src='../public/interface.js'></script>
   </body>
 </html>
