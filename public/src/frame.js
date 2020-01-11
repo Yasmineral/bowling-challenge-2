@@ -4,7 +4,7 @@ class Frame {
   }
 
   roll(totalPins) {
-    this.frameScore.push(totalPins)
+    this.frameScore.push(totalPins);
   }
 
   getScore() {
@@ -12,12 +12,9 @@ class Frame {
   }
 
   isSpare() {
-   if ((this.getScore() === 10) && this.frameScore[0] !== 10) {
-     return true 
-   }
-    else {
-      return false
+    if ((this.getScore() === 10) && this.frameScore[0] !== 10) {
+      return true;
     }
+    return false;
   }
 }
-
