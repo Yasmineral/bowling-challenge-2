@@ -24,15 +24,21 @@ describe("Frame", function() {
     })
   })
   describe("#isSpare", function() {
-    it("spare status is true when total number of knocked pins accross two rolls equals 10", function() {
+    it("returns true if total number of knocked pins accross two rolls equals 10", function() {
       frame.roll(5)
       frame.roll(5)
       expect(frame.isSpare()).toEqual(true)
     })
-    it("is false if the two rolls do not equal 10", function(){
+    it("returns false if the two rolls do not equal 10", function(){
       frame.roll(1)
       frame.roll(1)
       expect(frame.isSpare()).toEqual(false)
+    })
+  })
+  describe("#isStrike", function() {
+    it("returns true if the first roll scores 10 pins", function() {
+      frame.roll(10)
+      expect(frame.isStrike()).toEqual(true)
     })
   })
 })

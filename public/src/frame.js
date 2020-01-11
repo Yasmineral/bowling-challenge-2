@@ -17,4 +17,8 @@ class Frame {
     }
     return false;
   }
+
+  isStrike() {
+    return this.frameScore[0] === 10
+  }
 }
