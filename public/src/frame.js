@@ -1,6 +1,6 @@
 class Frame {
   constructor() {
-    this.frameScore = [];
+    this.frameScore = [5,5];
   }
 
   roll(totalPins) {
