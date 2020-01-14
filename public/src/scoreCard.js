@@ -1,7 +1,10 @@
 class scoreCard {
-  constructor(frame) {
-    this.frame = frame
+  constructor() {
+    this.allScores = []
   }
 
+  addScore(frame) {
+    this.allScores.push(frame.frameScore)
+  }
    
 }
