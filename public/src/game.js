@@ -4,7 +4,7 @@ class Game {
   }
  
   roll(pins) {
-    this.score += pins
+    this.totalScore += pins
   }
 
 }
