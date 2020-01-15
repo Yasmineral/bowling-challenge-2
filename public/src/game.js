@@ -13,13 +13,17 @@ class Game {
   score() {
     let frameIndex
     for (frameIndex = 0; frameIndex < 20;) {
-      this.totalScore += this.rolls[frameIndex] + this.rolls[frameIndex + 1]
-      if (this.rolls[frameIndex] + this.rolls[frameIndex + 1] === 10) {
+      if (this.isSpare(frameIndex)) {
         this.totalScore += this.rolls[frameIndex + 2]
       }
+      this.totalScore += this.rolls[frameIndex] + this.rolls[frameIndex + 1]
       frameIndex += 2
     }
     return this.totalScore
+  }
+
+  isSpare(frameIndex) {
+    return this.rolls[frameIndex] + this.rolls[frameIndex + 1] === 10
   }
 }
 
