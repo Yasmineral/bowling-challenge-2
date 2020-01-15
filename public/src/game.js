@@ -4,6 +4,7 @@ class Game {
     this.rolls = []
     this.currentRoll = 0
     this.maxPoints = 10
+    this.maxRolls = 20
   }
  
   roll(pins) {
@@ -13,7 +14,7 @@ class Game {
 
   score() {
     let frameIndex
-    for (frameIndex = 0; frameIndex < 20;) {
+    for (frameIndex = 0; frameIndex <= this.maxRolls;) {
       if (this.isSpare(frameIndex)) {
         this.totalScore += this.maxPoints + this.spareBonus(frameIndex)
         frameIndex += 2
