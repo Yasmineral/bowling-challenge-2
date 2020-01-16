@@ -4,7 +4,7 @@ class Game {
     this.rolls = []
     this.currentRoll = 0
     this.maxPoints = 10
-    this.maxRolls = 20
+    this.maxRolls = 19
   }
  
   roll(pins) {
