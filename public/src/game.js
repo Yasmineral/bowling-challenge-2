@@ -13,8 +13,9 @@ class Game {
   }
 
   score() {
-    let frameIndex
-    for (frameIndex = 0; frameIndex <= this.maxRolls;) {
+    let frameIndex = 0
+    let frame
+    for (frame = 0; frame < 10; frame++) {
       if (this.isSpare(frameIndex)) {
         this.totalScore += this.maxPoints + this.spareBonus(frameIndex)
         frameIndex += 2
@@ -25,7 +26,7 @@ class Game {
         this.totalScore += this.sumOfFrame(frameIndex)
         frameIndex += 2
       }
-    }
+  }
     return this.totalScore
   }
 
@@ -42,13 +43,15 @@ class Game {
   }
   
   strikeBonus(frameIndex) {
-    console.log(this.rolls[frameIndex])
     return this.rolls[frameIndex + 1] + this.rolls[frameIndex + 2]
   }
 
   sumOfFrame(frameIndex) {
-    console.log(this.rolls[frameIndex], this.rolls[frameIndex + 1])
     return this.rolls[frameIndex] + this.rolls[frameIndex + 1]
+  }
+
+  perfectGame() {
+    return this.totalScore === 300
   }
 }
 
