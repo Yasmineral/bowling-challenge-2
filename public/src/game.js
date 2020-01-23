@@ -49,9 +49,5 @@ class Game {
   sumOfFrame(frameIndex) {
     return this.rolls[frameIndex] + this.rolls[frameIndex + 1]
   }
-
-  perfectGame() {
-    return this.totalScore === 300
-  }
 }
 

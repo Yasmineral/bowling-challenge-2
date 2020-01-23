@@ -3,12 +3,16 @@
     <link rel='stylesheet' type='text/css' href='../public/src/index.css' />
   </head>
   <body>
-      <h1>Let's bowl!</h1>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type='text/javascript' src='../public/interface.js'></script>
+    <script type='text/javascript' src='../public/src/game.js'></script>
+
+      <div id="test"><h1>Let's bowl!</h1></div>
     <div id='scorecard-container' class='scorecard_container'>
     </div>
     <div id='scorecard-controls' class='scorecard_controls'>
     </div>
-    <div class='frame'>Frame 1
+    <div class='frame'><p>Frame 1</p>
     <form>
       <select id ="roll_1">
          <option value = "-" selected>-</option>
@@ -37,10 +41,7 @@
         <option value = "10">10</option>
      </select>
    </form>
-   <p>Total: </p>
+   <div id='total'>Total:<p></p></div>
   </div>
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script type='text/javascript' src='../public/src/frame.js'></script>
-    <script type='text/javascript' src='../public/interface.js'></script>
   </body>
 </html>
