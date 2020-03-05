@@ -49,5 +49,8 @@ class Game {
   sumOfFrame(frameIndex) {
     return this.rolls[frameIndex] + this.rolls[frameIndex + 1]
   }
+
+
+
 }
 
