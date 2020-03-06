@@ -75,13 +75,19 @@ $(document).ready(function(){
 
   $('select#frameTen_roll_1').change(function(e){
     game.roll(parseInt(e.target.value))
-    if (parseInt(e.target.value) === 10) {
-      $('#total h1').append(game.score())
-    }
+    // if (parseInt(e.target.value) === 10) {
+    //   game.score()
+    //   $('#total h1').append(game.totalScore)
+    // }
   })
 
   $('select#frameTen_roll_2').change(function(e){
     game.roll(parseInt(e.target.value))
-    $('#total h1').append(game.score())
+  })
+
+  $('select#frameTen_roll_3').change(function(e){
+    game.roll(parseInt(e.target.value))
+    game.score()
+    $('#total h1').append(game.totalScore)
   })
 })
