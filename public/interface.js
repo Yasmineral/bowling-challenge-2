@@ -1,32 +1,84 @@
 $(document).ready(function(){
   var game = new Game()
 
-
-
-  $('select#roll_1').change(function(e){
-    game.roll(e.target.value)
-
+  $('select#frameOne_roll_1').change(function(e){
+    game.roll(parseInt(e.target.value))
   })
 
-  $('select#roll_2').change(function(e){
-    game.roll(e.target.value)
+  $('select#frameOne_roll_2').change(function(e){
+    game.roll(parseInt(e.target.value))
   })
 
+  $('select#frameTwo_roll_1').change(function(e){
+    game.roll(parseInt(e.target.value))
+  })
 
+  $('select#frameTwo_roll_2').change(function(e){
+    game.roll(parseInt(e.target.value))
+  })
 
-  // $('select#roll_1').change(function(e){
-  //   if(e.target.value > 5) {
-  //     alert(e.target.value + ", fab!");
-  //   } else {
-  //     alert(e.target.value + ", rubbish!")
-  //   }
-  // })
-  // $('select#roll_2').change(function(e){
-  //   if(e.target.value > 5) {
-  //     alert(e.target.value + ", fab!");
-  //   } else {
-  //     alert(e.target.value + ", rubbish!")
-  //   }
-  // })
+  $('select#frameThree_roll_1').change(function(e){
+    game.roll(parseInt(e.target.value))
+  })
 
+  $('select#frameThree_roll_2').change(function(e){
+    game.roll(parseInt(e.target.value))
+  })
+
+  $('select#frameFour_roll_1').change(function(e){
+    game.roll(parseInt(e.target.value))
+  })
+
+  $('select#frameFour_roll_2').change(function(e){
+    game.roll(parseInt(e.target.value))
+  })
+
+  $('select#frameFive_roll_1').change(function(e){
+    game.roll(parseInt(e.target.value))
+  })
+
+  $('select#frameFive_roll_2').change(function(e){
+    game.roll(parseInt(e.target.value))
+  })
+
+  $('select#frameSix_roll_1').change(function(e){
+    game.roll(parseInt(e.target.value))
+  })
+
+  $('select#frameSix_roll_2').change(function(e){
+    game.roll(parseInt(e.target.value))
+  })
+
+  $('select#frameSeven_roll_1').change(function(e){
+    game.roll(parseInt(e.target.value))
+  })
+
+  $('select#frameSeven_roll_2').change(function(e){
+    game.roll(parseInt(e.target.value))
+  })
+
+  $('select#frameEight_roll_1').change(function(e){
+    game.roll(parseInt(e.target.value))
+  })
+
+  $('select#frameEight_roll_2').change(function(e){
+    game.roll(parseInt(e.target.value))
+  })
+
+  $('select#frameNine_roll_1').change(function(e){
+    game.roll(parseInt(e.target.value))
+  })
+
+  $('select#frameNine_roll_2').change(function(e){
+    game.roll(parseInt(e.target.value))
+  })
+
+  $('select#frameTen_roll_1').change(function(e){
+    game.roll(parseInt(e.target.value))
+  })
+
+  $('select#frameTen_roll_2').change(function(e){
+    game.roll(parseInt(e.target.value))
+    $('#total h1').append(game.score())
+  })
 })

@@ -6,6 +6,7 @@
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script type='text/javascript' src='../public/interface.js'></script>
     <script type='text/javascript' src='../public/src/game.js'></script>
+    <script type='text/javascript' src='../public/src/frame.js'></script>
 
       <div id="test"><h1>Let's bowl!</h1></div>
     <div id='scorecard-container' class='scorecard_container'>
@@ -14,7 +15,7 @@
     </div>
     <div class='frame'><p>Frame 1</p>
     <form>
-      <select id ="roll_1">
+      <select id ="frameOne_roll_1">
          <option value = "-" selected>-</option>
          <option value = "1">1</option>
          <option value = "2">2</option>
@@ -27,7 +28,7 @@
          <option value = "9">9</option>
          <option value = "10">10</option>
       </select>
-      <select id="roll_2">
+      <select id="frameOne_roll_2">
         <option value = "-" selected>-</option>
         <option value = "1">1</option>
         <option value = "2">2</option>
@@ -41,7 +42,277 @@
         <option value = "10">10</option>
      </select>
    </form>
-   <div id='total'>Total:<p></p></div>
   </div>
+  <div class='frame'><p>Frame 2</p>
+    <form>
+      <select id ="frameTwo_roll_1">
+         <option value = "-" selected>-</option>
+         <option value = "1">1</option>
+         <option value = "2">2</option>
+         <option value = "3">3</option>
+         <option value = "4">4</option>
+         <option value = "5">5</option>
+         <option value = "6">6</option>
+         <option value = "7">7</option>
+         <option value = "8">8</option>
+         <option value = "9">9</option>
+         <option value = "10">10</option>
+      </select>
+      <select id="frameTwo_roll_2">
+        <option value = "-" selected>-</option>
+        <option value = "1">1</option>
+        <option value = "2">2</option>
+        <option value = "3">3</option>
+        <option value = "4">4</option>
+        <option value = "5">5</option>
+        <option value = "6">6</option>
+        <option value = "7">7</option>
+        <option value = "8">8</option>
+        <option value = "9">9</option>
+        <option value = "10">10</option>
+     </select>
+   </form>
+  </div>
+  <div class='frame'><p>Frame 3</p>
+    <form>
+      <select id ="frameThree_roll_1">
+         <option value = "-" selected>-</option>
+         <option value = "1">1</option>
+         <option value = "2">2</option>
+         <option value = "3">3</option>
+         <option value = "4">4</option>
+         <option value = "5">5</option>
+         <option value = "6">6</option>
+         <option value = "7">7</option>
+         <option value = "8">8</option>
+         <option value = "9">9</option>
+         <option value = "10">10</option>
+      </select>
+      <select id="frameThree_roll_2">
+        <option value = "-" selected>-</option>
+        <option value = "1">1</option>
+        <option value = "2">2</option>
+        <option value = "3">3</option>
+        <option value = "4">4</option>
+        <option value = "5">5</option>
+        <option value = "6">6</option>
+        <option value = "7">7</option>
+        <option value = "8">8</option>
+        <option value = "9">9</option>
+        <option value = "10">10</option>
+     </select>
+   </form>
+  </div>
+  <div class='frame'><p>Frame 4</p>
+    <form>
+      <select id ="frameFour_roll_1">
+         <option value = "-" selected>-</option>
+         <option value = "1">1</option>
+         <option value = "2">2</option>
+         <option value = "3">3</option>
+         <option value = "4">4</option>
+         <option value = "5">5</option>
+         <option value = "6">6</option>
+         <option value = "7">7</option>
+         <option value = "8">8</option>
+         <option value = "9">9</option>
+         <option value = "10">10</option>
+      </select>
+      <select id="frameFour_roll_2">
+        <option value = "-" selected>-</option>
+        <option value = "1">1</option>
+        <option value = "2">2</option>
+        <option value = "3">3</option>
+        <option value = "4">4</option>
+        <option value = "5">5</option>
+        <option value = "6">6</option>
+        <option value = "7">7</option>
+        <option value = "8">8</option>
+        <option value = "9">9</option>
+        <option value = "10">10</option>
+     </select>
+   </form>
+  </div>
+  <div class='frame'><p>Frame 5</p>
+    <form>
+      <select id ="frameFive_roll_1">
+         <option value = "-" selected>-</option>
+         <option value = "1">1</option>
+         <option value = "2">2</option>
+         <option value = "3">3</option>
+         <option value = "4">4</option>
+         <option value = "5">5</option>
+         <option value = "6">6</option>
+         <option value = "7">7</option>
+         <option value = "8">8</option>
+         <option value = "9">9</option>
+         <option value = "10">10</option>
+      </select>
+      <select id="frameFive_roll_2">
+        <option value = "-" selected>-</option>
+        <option value = "1">1</option>
+        <option value = "2">2</option>
+        <option value = "3">3</option>
+        <option value = "4">4</option>
+        <option value = "5">5</option>
+        <option value = "6">6</option>
+        <option value = "7">7</option>
+        <option value = "8">8</option>
+        <option value = "9">9</option>
+        <option value = "10">10</option>
+     </select>
+   </form>
+  </div>
+  <div class='frame'><p>Frame 6</p>
+    <form>
+      <select id ="frameSix_roll_1">
+         <option value = "-" selected>-</option>
+         <option value = "1">1</option>
+         <option value = "2">2</option>
+         <option value = "3">3</option>
+         <option value = "4">4</option>
+         <option value = "5">5</option>
+         <option value = "6">6</option>
+         <option value = "7">7</option>
+         <option value = "8">8</option>
+         <option value = "9">9</option>
+         <option value = "10">10</option>
+      </select>
+      <select id="frameSix_roll_2">
+        <option value = "-" selected>-</option>
+        <option value = "1">1</option>
+        <option value = "2">2</option>
+        <option value = "3">3</option>
+        <option value = "4">4</option>
+        <option value = "5">5</option>
+        <option value = "6">6</option>
+        <option value = "7">7</option>
+        <option value = "8">8</option>
+        <option value = "9">9</option>
+        <option value = "10">10</option>
+     </select>
+   </form>
+  </div>
+  <div class='frame'><p>Frame 7</p>
+    <form>
+      <select id ="frameSeven_roll_1">
+         <option value = "-" selected>-</option>
+         <option value = "1">1</option>
+         <option value = "2">2</option>
+         <option value = "3">3</option>
+         <option value = "4">4</option>
+         <option value = "5">5</option>
+         <option value = "6">6</option>
+         <option value = "7">7</option>
+         <option value = "8">8</option>
+         <option value = "9">9</option>
+         <option value = "10">10</option>
+      </select>
+      <select id="frameSeven_roll_2">
+        <option value = "-" selected>-</option>
+        <option value = "1">1</option>
+        <option value = "2">2</option>
+        <option value = "3">3</option>
+        <option value = "4">4</option>
+        <option value = "5">5</option>
+        <option value = "6">6</option>
+        <option value = "7">7</option>
+        <option value = "8">8</option>
+        <option value = "9">9</option>
+        <option value = "10">10</option>
+     </select>
+   </form>
+  </div>
+  <div class='frame'><p>Frame 8</p>
+    <form>
+      <select id ="frameEight_roll_1">
+         <option value = "-" selected>-</option>
+         <option value = "1">1</option>
+         <option value = "2">2</option>
+         <option value = "3">3</option>
+         <option value = "4">4</option>
+         <option value = "5">5</option>
+         <option value = "6">6</option>
+         <option value = "7">7</option>
+         <option value = "8">8</option>
+         <option value = "9">9</option>
+         <option value = "10">10</option>
+      </select>
+      <select id="frameEight_roll_2">
+        <option value = "-" selected>-</option>
+        <option value = "1">1</option>
+        <option value = "2">2</option>
+        <option value = "3">3</option>
+        <option value = "4">4</option>
+        <option value = "5">5</option>
+        <option value = "6">6</option>
+        <option value = "7">7</option>
+        <option value = "8">8</option>
+        <option value = "9">9</option>
+        <option value = "10">10</option>
+     </select>
+   </form>
+  </div>
+  <div class='frame'><p>Frame 9</p>
+    <form>
+      <select id ="frameNine_roll_1">
+         <option value = "-" selected>-</option>
+         <option value = "1">1</option>
+         <option value = "2">2</option>
+         <option value = "3">3</option>
+         <option value = "4">4</option>
+         <option value = "5">5</option>
+         <option value = "6">6</option>
+         <option value = "7">7</option>
+         <option value = "8">8</option>
+         <option value = "9">9</option>
+         <option value = "10">10</option>
+      </select>
+      <select id="frameNine_roll_2">
+        <option value = "-" selected>-</option>
+        <option value = "1">1</option>
+        <option value = "2">2</option>
+        <option value = "3">3</option>
+        <option value = "4">4</option>
+        <option value = "5">5</option>
+        <option value = "6">6</option>
+        <option value = "7">7</option>
+        <option value = "8">8</option>
+        <option value = "9">9</option>
+        <option value = "10">10</option>
+     </select>
+   </form>
+  </div>
+  <div class='frame'><p>Frame 10</p>
+    <form>
+      <select id ="frameTen_roll_1">
+         <option value = "-" selected>-</option>
+         <option value = "1">1</option>
+         <option value = "2">2</option>
+         <option value = "3">3</option>
+         <option value = "4">4</option>
+         <option value = "5">5</option>
+         <option value = "6">6</option>
+         <option value = "7">7</option>
+         <option value = "8">8</option>
+         <option value = "9">9</option>
+         <option value = "10">10</option>
+      </select>
+      <select id="frameTen_roll_2">
+        <option value = "-" selected>-</option>
+        <option value = "1">1</option>
+        <option value = "2">2</option>
+        <option value = "3">3</option>
+        <option value = "4">4</option>
+        <option value = "5">5</option>
+        <option value = "6">6</option>
+        <option value = "7">7</option>
+        <option value = "8">8</option>
+        <option value = "9">9</option>
+        <option value = "10">10</option>
+     </select>
+   </form>
+  </div>
+  <div id="total"><h1>Total: </h1></div>
   </body>
 </html>
