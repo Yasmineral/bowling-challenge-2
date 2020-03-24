@@ -1,5 +1,5 @@
 # Bowling Challenge - take 2
-Re-visiting the bowling challenge with adapted javascript logic and a front-end using jQuery. 
+Re-visited the bowling challenge with adapted javascript logic and a front-end using jQuery. 
 
 
 ## The rules
